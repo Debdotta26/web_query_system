@@ -1,0 +1,608 @@
+{
+    "summary": {
+        "total_queries": 51,
+        "local_hits": 32,
+        "nit_api_fallbacks": 11,
+        "general_api_fallbacks": 8,
+        "cost_savings_pct": 62.7,
+        "total_prompt_tokens": 1641,
+        "total_output_tokens": 5211,
+        "total_api_tokens": 13814
+    },
+    "logs": [
+        {
+            "timestamp": "2026-11-12T06:47:18.672991",
+            "query": "What is the overall placement percentage at Narula Institute of Technology?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.5564
+        },
+        {
+            "timestamp": "2026-11-12T06:47:18.673473",
+            "query": "What is the 1st semester fee for B.Tech Computer Science and Engineering?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.6752
+        },
+        {
+            "timestamp": "2026-11-12T06:47:18.673880",
+            "query": "How many seats are there in Computer Science and Engineering CSE?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.823
+        },
+        {
+            "timestamp": "2026-11-13T18:30:44.770314",
+            "query": "What is the overall placement percentage at Narula Institute of Technology?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.5564,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-13T18:30:44.770832",
+            "query": "What is the 1st semester fee for B.Tech Computer Science and Engineering?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.6752,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-13T18:30:44.771187",
+            "query": "How many seats are there in Computer Science and Engineering CSE?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.823,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-13T19:24:38.957455",
+            "query": "who is hod of cse department in nit?",
+            "status": "NIT_SPECIFIC_API_FALLBACK",
+            "score": 0.1,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-13T19:24:38.957784",
+            "query": "who is hod of cse?",
+            "status": "NIT_SPECIFIC_API_FALLBACK",
+            "score": 0.1,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-13T19:24:38.958222",
+            "query": "How many seats in CSE?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.8494,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-13T19:34:49.537747",
+            "query": "What is the 1st semester fee for B.Tech Computer Science and Engineering?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.8752,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-13T19:34:49.538304",
+            "query": "How many seats are there in Computer Science and Engineering CSE?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 1.023,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-13T19:34:49.538690",
+            "query": "What is the eligibility criteria for B.Tech admission?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.4661,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-13T19:34:49.539036",
+            "query": "What documents are required during physical verification?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.4925,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-13T19:34:49.539381",
+            "query": "What is the overall placement percentage at Narula Institute of Technology?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.5564,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-15T01:49:05.638188",
+            "query": "What is the overall placement percentage at Narula Institute of Technology?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.5564,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-15T01:49:05.644654",
+            "query": "What is the 1st semester fee for B.Tech Computer Science and Engineering?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.8752,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-15T01:49:05.653097",
+            "query": "How many seats are there in Computer Science and Engineering CSE?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 1.023,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-15T01:50:02.393427",
+            "query": "what is the fees structure for btech cse?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.6679,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-15T01:50:42.734706",
+            "query": "total seat available in btech?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.4471,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-15T01:51:29.610322",
+            "query": "who is the founder of nit?",
+            "status": "NIT_SPECIFIC_API_FALLBACK",
+            "score": 0.1,
+            "tokens": {
+                "prompt_tokens": 225,
+                "output_tokens": 44,
+                "thoughts_tokens": 371,
+                "total_tokens": 640
+            }
+        },
+        {
+            "timestamp": "2026-11-15T01:53:04.809532",
+            "query": "who is ms dhoni?",
+            "status": "GENERAL_OUT_OF_DOMAIN_API",
+            "score": 0.1263,
+            "tokens": {
+                "prompt_tokens": 57,
+                "output_tokens": 799,
+                "thoughts_tokens": 643,
+                "total_tokens": 1499
+            }
+        },
+        {
+            "timestamp": "2026-11-15T01:53:46.258943",
+            "query": "What is the 1st semester fee for B.Tech Computer Science and Engineering?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.8752,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-15T19:10:13.110990",
+            "query": "what is 2nd semester fees for btech?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.5358,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-15T19:11:37.050062",
+            "query": "who is the founder of the college nit?",
+            "status": "NIT_SPECIFIC_API_FALLBACK",
+            "score": 0.1,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-15T19:35:05.703134",
+            "query": "what is the fees structure for btech 1 semester?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.5144,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-15T19:35:39.102420",
+            "query": "available seat on btech ?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.3456,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-15T19:36:19.527452",
+            "query": "What is the overall placement percentage at Narula Institute of Technology?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.5564,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-15T19:37:33.116885",
+            "query": "who is the founder of nit?",
+            "status": "NIT_SPECIFIC_API_FALLBACK",
+            "score": 0.1,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-15T19:37:46.147262",
+            "query": "Who is the Principal and Founder of Narula Institute of Technology?",
+            "status": "NIT_SPECIFIC_API_FALLBACK",
+            "score": 0.1,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-15T19:38:05.608751",
+            "query": "Who is the Principal and Founder of Narula Institute of Technology?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.1,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-15T19:38:32.543637",
+            "query": "Who is the Principal and Founder of Narula Institute of Technology?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.1,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-15T19:38:50.616005",
+            "query": "who is cristiano ronaldo?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.1263,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-15T19:39:13.138764",
+            "query": "who is cristiano ronaldo?",
+            "status": "GENERAL_OUT_OF_DOMAIN_API",
+            "score": 0.1263,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-15T19:45:16.986483",
+            "query": "who is cristiano ronaldo?",
+            "status": "GENERAL_OUT_OF_DOMAIN_API",
+            "score": 0.1263,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-15T19:47:33.915196",
+            "query": "who is cristiano ronaldo?",
+            "status": "GENERAL_OUT_OF_DOMAIN_API",
+            "score": 0.1263,
+            "tokens": {
+                "prompt_tokens": 57,
+                "output_tokens": 856,
+                "thoughts_tokens": 801,
+                "total_tokens": 1714
+            }
+        },
+        {
+            "timestamp": "2026-11-15T19:48:57.981886",
+            "query": "what is cloud computing?",
+            "status": "GENERAL_OUT_OF_DOMAIN_API",
+            "score": 0.1561,
+            "tokens": {
+                "prompt_tokens": 56,
+                "output_tokens": 1083,
+                "thoughts_tokens": 636,
+                "total_tokens": 1775
+            }
+        },
+        {
+            "timestamp": "2026-11-15T19:50:19.598166",
+            "query": "who is the founder of nit?",
+            "status": "NIT_SPECIFIC_API_FALLBACK",
+            "score": 0.1,
+            "tokens": {
+                "prompt_tokens": 225,
+                "output_tokens": 44,
+                "thoughts_tokens": 367,
+                "total_tokens": 636
+            }
+        },
+        {
+            "timestamp": "2026-11-15T19:51:16.118731",
+            "query": "total seat available for btech in all department?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.4304,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-15T19:51:55.035892",
+            "query": "total seat in btech all department?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.4471,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-15T19:52:36.031368",
+            "query": "how can a student apply on svmcm scholarship?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.5036,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-15T19:54:21.248681",
+            "query": "How many seats are there in Computer Science and Engineering CSE?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 1.023,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-16T00:22:22.496131",
+            "query": "who is virat kohli?",
+            "status": "GENERAL_OUT_OF_DOMAIN_API",
+            "score": 0.1263,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-16T00:24:59.244067",
+            "query": "who is virat kohli?",
+            "status": "GENERAL_OUT_OF_DOMAIN_API",
+            "score": 0.1263,
+            "tokens": {
+                "prompt_tokens": 58,
+                "output_tokens": 722,
+                "thoughts_tokens": 650,
+                "total_tokens": 1430
+            }
+        },
+        {
+            "timestamp": "2026-11-16T00:25:50.036773",
+            "query": "what is 1st sem fees for cse?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.7141,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-16T00:28:11.519514",
+            "query": "what is the criteria for lateral entry students?",
+            "status": "GENERAL_OUT_OF_DOMAIN_API",
+            "score": 0.5454,
+            "tokens": {
+                "prompt_tokens": 60,
+                "output_tokens": 644,
+                "thoughts_tokens": 786,
+                "total_tokens": 1490
+            }
+        },
+        {
+            "timestamp": "2026-11-16T00:28:48.721301",
+            "query": "criteria for lateral entry student in nit?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.6667,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-16T00:29:14.721511",
+            "query": "how to get admission on nit?",
+            "status": "NIT_SPECIFIC_API_FALLBACK",
+            "score": 0.2891,
+            "tokens": {
+                "prompt_tokens": 225,
+                "output_tokens": 454,
+                "thoughts_tokens": 719,
+                "total_tokens": 1398
+            }
+        },
+        {
+            "timestamp": "2026-11-16T00:30:08.287146",
+            "query": "what is the highest package nit offer?",
+            "status": "NIT_SPECIFIC_API_FALLBACK",
+            "score": 0.453,
+            "tokens": {
+                "prompt_tokens": 226,
+                "output_tokens": 194,
+                "thoughts_tokens": 848,
+                "total_tokens": 1268
+            }
+        },
+        {
+            "timestamp": "2026-11-16T00:31:22.736242",
+            "query": "what is the fees for electrical engineering in nit?",
+            "status": "LOCAL_WEBSITE_HIT",
+            "score": 0.6631,
+            "tokens": {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "thoughts_tokens": 0,
+                "total_tokens": 0
+            }
+        },
+        {
+            "timestamp": "2026-11-16T00:32:15.054056",
+            "query": "how many department are there in nit?",
+            "status": "NIT_SPECIFIC_API_FALLBACK",
+            "score": 0.2199,
+            "tokens": {
+                "prompt_tokens": 226,
+                "output_tokens": 210,
+                "thoughts_tokens": 630,
+                "total_tokens": 1066
+            }
+        },
+        {
+            "timestamp": "2026-11-16T00:33:07.687372",
+            "query": "is mtech course available in nit?",
+            "status": "NIT_SPECIFIC_API_FALLBACK",
+            "score": 0.3438,
+            "tokens": {
+                "prompt_tokens": 226,
+                "output_tokens": 161,
+                "thoughts_tokens": 511,
+                "total_tokens": 898
+            }
+        }
+    ]
+}

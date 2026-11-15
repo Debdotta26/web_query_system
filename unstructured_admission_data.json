@@ -1,0 +1,380 @@
+{
+    "institution": "Narula Institute of Technology (NIT)",
+    "source_url": "https://www.nit.ac.in/admission/",
+    "total_chunks": 34,
+    "chunks": [
+        {
+            "chunk_id": "chunk_00001",
+            "intent": "fee",
+            "category": "btech_fee",
+            "title": "B.Tech 1st Semester & 4-Year Fee Structure for Computer Science and Engineering (CSE) and CSE (AI & ML)",
+            "content": "B.Tech Fee Structure for Computer Science and Engineering (CSE) and CSE (AI & ML) at Narula Institute of Technology:\n• 1st Semester Fee (Payable at Admission): ₹108,125\n• 2nd Semester Fee: ₹77,825\n• 3rd, 4th, 5th, and 6th Semester Fees: ₹97,825 per semester\n• 7th Semester Fee: ₹98,325 | 8th Semester Fee: ₹99,325\n• Total 4-Year Program Fee (8 Semesters): ₹7,74,900\nUniform fee (₹6,000) and MAKAUT semester exam fees are payable separately.",
+            "metadata": {
+                "branch": "Computer Science and Engineering (CSE) and CSE (AI & ML)",
+                "sem1_fee": "₹108,125",
+                "total_fee": "₹7,74,900"
+            }
+        },
+        {
+            "chunk_id": "chunk_00002",
+            "intent": "fee",
+            "category": "btech_fee",
+            "title": "B.Tech 1st Semester & 4-Year Fee Structure for CSE (Data Science)",
+            "content": "B.Tech Fee Structure for CSE (Data Science) at Narula Institute of Technology:\n• 1st Semester Fee (Payable at Admission): ₹99,625\n• 2nd Semester Fee: ₹69,325\n• 3rd, 4th, 5th, and 6th Semester Fees: ₹89,325 per semester\n• 7th Semester Fee: ₹89,825 | 8th Semester Fee: ₹90,825\n• Total 4-Year Program Fee (8 Semesters): ₹7,06,900\nUniform fee (₹6,000) and MAKAUT semester exam fees are payable separately.",
+            "metadata": {
+                "branch": "CSE (Data Science)",
+                "sem1_fee": "₹99,625",
+                "total_fee": "₹7,06,900"
+            }
+        },
+        {
+            "chunk_id": "chunk_00003",
+            "intent": "fee",
+            "category": "btech_fee",
+            "title": "B.Tech 1st Semester & 4-Year Fee Structure for Information Technology (IT), Computer Science & Technology (CST), CSE (Business Systems - CSBS)",
+            "content": "B.Tech Fee Structure for Information Technology (IT), Computer Science & Technology (CST), CSE (Business Systems - CSBS) at Narula Institute of Technology:\n• 1st Semester Fee (Payable at Admission): ₹96,375\n• 2nd Semester Fee: ₹66,075\n• 3rd, 4th, 5th, and 6th Semester Fees: ₹86,075 per semester\n• 7th Semester Fee: ₹86,575 | 8th Semester Fee: ₹87,575\n• Total 4-Year Program Fee (8 Semesters): ₹6,80,900\nUniform fee (₹6,000) and MAKAUT semester exam fees are payable separately.",
+            "metadata": {
+                "branch": "Information Technology (IT), Computer Science & Technology (CST), CSE (Business Systems - CSBS)",
+                "sem1_fee": "₹96,375",
+                "total_fee": "₹6,80,900"
+            }
+        },
+        {
+            "chunk_id": "chunk_00004",
+            "intent": "fee",
+            "category": "btech_fee",
+            "title": "B.Tech 1st Semester & 4-Year Fee Structure for Electronics and Communications Engineering (ECE)",
+            "content": "B.Tech Fee Structure for Electronics and Communications Engineering (ECE) at Narula Institute of Technology:\n• 1st Semester Fee (Payable at Admission): ₹92,625\n• 2nd Semester Fee: ₹62,325\n• 3rd, 4th, 5th, and 6th Semester Fees: ₹82,325 per semester\n• 7th Semester Fee: ₹82,825 | 8th Semester Fee: ₹83,825\n• Total 4-Year Program Fee (8 Semesters): ₹6,50,900\nUniform fee (₹6,000) and MAKAUT semester exam fees are payable separately.",
+            "metadata": {
+                "branch": "Electronics and Communications Engineering (ECE)",
+                "sem1_fee": "₹92,625",
+                "total_fee": "₹6,50,900"
+            }
+        },
+        {
+            "chunk_id": "chunk_00005",
+            "intent": "fee",
+            "category": "btech_fee",
+            "title": "B.Tech 1st Semester & 4-Year Fee Structure for Electrical Engineering (EE)",
+            "content": "B.Tech Fee Structure for Electrical Engineering (EE) at Narula Institute of Technology:\n• 1st Semester Fee (Payable at Admission): ₹71,125\n• 2nd Semester Fee: ₹40,825\n• 3rd, 4th, 5th, and 6th Semester Fees: ₹60,825 per semester\n• 7th Semester Fee: ₹61,325 | 8th Semester Fee: ₹62,325\n• Total 4-Year Program Fee (8 Semesters): ₹4,78,900\nUniform fee (₹6,000) and MAKAUT semester exam fees are payable separately.",
+            "metadata": {
+                "branch": "Electrical Engineering (EE)",
+                "sem1_fee": "₹71,125",
+                "total_fee": "₹4,78,900"
+            }
+        },
+        {
+            "chunk_id": "chunk_00006",
+            "intent": "fee",
+            "category": "btech_fee",
+            "title": "B.Tech 1st Semester & 4-Year Fee Structure for Civil Engineering (CE) and Mechanical Engineering (ME)",
+            "content": "B.Tech Fee Structure for Civil Engineering (CE) and Mechanical Engineering (ME) at Narula Institute of Technology:\n• 1st Semester Fee (Payable at Admission): ₹67,625\n• 2nd Semester Fee: ₹37,325\n• 3rd, 4th, 5th, and 6th Semester Fees: ₹57,325 per semester\n• 7th Semester Fee: ₹57,825 | 8th Semester Fee: ₹58,825\n• Total 4-Year Program Fee (8 Semesters): ₹4,50,900\nUniform fee (₹6,000) and MAKAUT semester exam fees are payable separately.",
+            "metadata": {
+                "branch": "Civil Engineering (CE) and Mechanical Engineering (ME)",
+                "sem1_fee": "₹67,625",
+                "total_fee": "₹4,50,900"
+            }
+        },
+        {
+            "chunk_id": "chunk_00007",
+            "intent": "fee",
+            "category": "btech_fee",
+            "title": "B.Tech 1st Semester & 4-Year Fee Structure for Electronics and Computer Science (ECS)",
+            "content": "B.Tech Fee Structure for Electronics and Computer Science (ECS) at Narula Institute of Technology:\n• 1st Semester Fee (Payable at Admission): ₹79,375\n• 2nd Semester Fee: ₹49,075\n• 3rd, 4th, 5th, and 6th Semester Fees: ₹69,075 per semester\n• 7th Semester Fee: ₹69,575 | 8th Semester Fee: ₹70,575\n• Total 4-Year Program Fee (8 Semesters): ₹5,44,900\nUniform fee (₹6,000) and MAKAUT semester exam fees are payable separately.",
+            "metadata": {
+                "branch": "Electronics and Computer Science (ECS)",
+                "sem1_fee": "₹79,375",
+                "total_fee": "₹5,44,900"
+            }
+        },
+        {
+            "chunk_id": "chunk_00008",
+            "intent": "hostel",
+            "category": "hostel_fees",
+            "title": "Hostel Fees, Food Mess, and Uniform Charges at Narula Institute of Technology",
+            "content": "Hostel and Facility Charges at Narula Institute of Technology:\n• Hostel Fees: ₹6,500 per month (6 months semester = ₹39,000) plus one-time admission fee of ₹5,000. Total payable at admission is ₹44,000.\n• Hostel Facilities: Separate secure hostels for boys and girls, 24/7 security, Wi-Fi, power backup, and hygienic mess food (veg & non-veg).\n• Uniform Charges: ₹6,000 one-time for B.Tech, BCA, BBA, and Diploma students (₹2,500 for MCA & M.Tech).\n• Payment Terms: All fees must be paid through online portal only. EMI and education loan assistance available.",
+            "metadata": {
+                "hostel_sem": "₹44,000",
+                "uniform": "₹6,000"
+            }
+        },
+        {
+            "chunk_id": "chunk_00009",
+            "intent": "placement",
+            "category": "placements",
+            "title": "Campus Placements, Highest Package, Average Salary, and Placement Percentage at Narula Institute of Technology",
+            "content": "Campus Placement Statistics and Recruiter Records at Narula Institute of Technology (NIT):\n• Overall Placement Percentage: 88%+ consistent placement rate across engineering and technology departments.\n• Highest Salary Package: ₹18 LPA (Lakhs Per Annum).\n• Average Salary Package: ₹5.2 LPA.\n• Total Offers: 1000+ job offers generated for eligible graduates.\n• Top Recruiters: Tata Consultancy Services (TCS), Cognizant, Wipro, Capgemini, Infosys, Amazon, Tech Mahindra, Mindtree, LTI, and IBM.\n• Industry Labs: Dedicated Apple iOS Developer Training Center, AI & Robotics Centers of Excellence.\n• Placement Assistance: Pre-placement soft skills training, mock interviews, and technical coding bootcamps starting from 3rd year.",
+            "metadata": {
+                "placement_rate": "88%+",
+                "highest_package": "18 LPA",
+                "average_package": "5.2 LPA"
+            }
+        },
+        {
+            "chunk_id": "chunk_00010",
+            "intent": "seat",
+            "category": "seat_matrix",
+            "title": "Seat Intake for Computer Science and Engineering (CSE)",
+            "content": "Program: Computer Science and Engineering (CSE)\nApproved Seat Intake: 300 seats\nDegree Level: B.Tech (UG)\nInstitution: Narula Institute of Technology (NIT), Kolkata",
+            "metadata": {
+                "stream": "Computer Science and Engineering (CSE)",
+                "seats": "300 seats"
+            }
+        },
+        {
+            "chunk_id": "chunk_00011",
+            "intent": "seat",
+            "category": "seat_matrix",
+            "title": "Seat Intake for CSE (AI and Machine Learning)",
+            "content": "Program: CSE (AI and Machine Learning)\nApproved Seat Intake: 240 seats\nDegree Level: B.Tech (UG)\nInstitution: Narula Institute of Technology (NIT), Kolkata",
+            "metadata": {
+                "stream": "CSE (AI and Machine Learning)",
+                "seats": "240 seats"
+            }
+        },
+        {
+            "chunk_id": "chunk_00012",
+            "intent": "seat",
+            "category": "seat_matrix",
+            "title": "Seat Intake for Information Technology (IT)",
+            "content": "Program: Information Technology (IT)\nApproved Seat Intake: 180 seats\nDegree Level: B.Tech (UG)\nInstitution: Narula Institute of Technology (NIT), Kolkata",
+            "metadata": {
+                "stream": "Information Technology (IT)",
+                "seats": "180 seats"
+            }
+        },
+        {
+            "chunk_id": "chunk_00013",
+            "intent": "seat",
+            "category": "seat_matrix",
+            "title": "Seat Intake for Electronics and Communications Engineering (ECE)",
+            "content": "Program: Electronics and Communications Engineering (ECE)\nApproved Seat Intake: 150 seats\nDegree Level: B.Tech (UG)\nInstitution: Narula Institute of Technology (NIT), Kolkata",
+            "metadata": {
+                "stream": "Electronics and Communications Engineering (ECE)",
+                "seats": "150 seats"
+            }
+        },
+        {
+            "chunk_id": "chunk_00014",
+            "intent": "seat",
+            "category": "seat_matrix",
+            "title": "Seat Intake for CSE (Data Science)",
+            "content": "Program: CSE (Data Science)\nApproved Seat Intake: 120 seats\nDegree Level: B.Tech (UG)\nInstitution: Narula Institute of Technology (NIT), Kolkata",
+            "metadata": {
+                "stream": "CSE (Data Science)",
+                "seats": "120 seats"
+            }
+        },
+        {
+            "chunk_id": "chunk_00015",
+            "intent": "seat",
+            "category": "seat_matrix",
+            "title": "Seat Intake for Electrical Engineering (EE)",
+            "content": "Program: Electrical Engineering (EE)\nApproved Seat Intake: 60 seats\nDegree Level: B.Tech (UG)\nInstitution: Narula Institute of Technology (NIT), Kolkata",
+            "metadata": {
+                "stream": "Electrical Engineering (EE)",
+                "seats": "60 seats"
+            }
+        },
+        {
+            "chunk_id": "chunk_00016",
+            "intent": "seat",
+            "category": "seat_matrix",
+            "title": "Seat Intake for Civil Engineering (CE)",
+            "content": "Program: Civil Engineering (CE)\nApproved Seat Intake: 60 seats\nDegree Level: B.Tech (UG)\nInstitution: Narula Institute of Technology (NIT), Kolkata",
+            "metadata": {
+                "stream": "Civil Engineering (CE)",
+                "seats": "60 seats"
+            }
+        },
+        {
+            "chunk_id": "chunk_00017",
+            "intent": "seat",
+            "category": "seat_matrix",
+            "title": "Seat Intake for Mechanical Engineering (ME)",
+            "content": "Program: Mechanical Engineering (ME)\nApproved Seat Intake: 60 seats\nDegree Level: B.Tech (UG)\nInstitution: Narula Institute of Technology (NIT), Kolkata",
+            "metadata": {
+                "stream": "Mechanical Engineering (ME)",
+                "seats": "60 seats"
+            }
+        },
+        {
+            "chunk_id": "chunk_00018",
+            "intent": "seat",
+            "category": "seat_matrix",
+            "title": "Seat Intake for Computer Science and Technology (CST)",
+            "content": "Program: Computer Science and Technology (CST)\nApproved Seat Intake: 60 seats\nDegree Level: B.Tech (UG)\nInstitution: Narula Institute of Technology (NIT), Kolkata",
+            "metadata": {
+                "stream": "Computer Science and Technology (CST)",
+                "seats": "60 seats"
+            }
+        },
+        {
+            "chunk_id": "chunk_00019",
+            "intent": "seat",
+            "category": "seat_matrix",
+            "title": "Seat Intake for CSE (Business Systems - CSBS)",
+            "content": "Program: CSE (Business Systems - CSBS)\nApproved Seat Intake: 60 seats\nDegree Level: B.Tech (UG)\nInstitution: Narula Institute of Technology (NIT), Kolkata",
+            "metadata": {
+                "stream": "CSE (Business Systems - CSBS)",
+                "seats": "60 seats"
+            }
+        },
+        {
+            "chunk_id": "chunk_00020",
+            "intent": "seat",
+            "category": "seat_matrix",
+            "title": "Seat Intake for Electronics and Computer Science (ECS)",
+            "content": "Program: Electronics and Computer Science (ECS)\nApproved Seat Intake: 30 seats\nDegree Level: B.Tech (UG)\nInstitution: Narula Institute of Technology (NIT), Kolkata",
+            "metadata": {
+                "stream": "Electronics and Computer Science (ECS)",
+                "seats": "30 seats"
+            }
+        },
+        {
+            "chunk_id": "chunk_00021",
+            "intent": "seat",
+            "category": "seat_matrix",
+            "title": "Seat Intake for Master of Computer Applications (MCA)",
+            "content": "Program: Master of Computer Applications (MCA)\nApproved Seat Intake: 60 seats\nDegree Level: PG\nInstitution: Narula Institute of Technology (NIT), Kolkata",
+            "metadata": {
+                "stream": "Master of Computer Applications (MCA)",
+                "seats": "60 seats"
+            }
+        },
+        {
+            "chunk_id": "chunk_00022",
+            "intent": "seat",
+            "category": "seat_matrix",
+            "title": "Seat Intake for M.Tech in CSE, ECE, EE, CE",
+            "content": "Program: M.Tech in CSE, ECE, EE, CE\nApproved Seat Intake: 18 seats each\nDegree Level: PG\nInstitution: Narula Institute of Technology (NIT), Kolkata",
+            "metadata": {
+                "stream": "M.Tech in CSE, ECE, EE, CE",
+                "seats": "18 seats each"
+            }
+        },
+        {
+            "chunk_id": "chunk_00023",
+            "intent": "seat",
+            "category": "seat_matrix",
+            "title": "Seat Intake for Bachelor of Computer Applications (BCA)",
+            "content": "Program: Bachelor of Computer Applications (BCA)\nApproved Seat Intake: 120 seats\nDegree Level: UG\nInstitution: Narula Institute of Technology (NIT), Kolkata",
+            "metadata": {
+                "stream": "Bachelor of Computer Applications (BCA)",
+                "seats": "120 seats"
+            }
+        },
+        {
+            "chunk_id": "chunk_00024",
+            "intent": "seat",
+            "category": "seat_matrix",
+            "title": "Seat Intake for Bachelor of Business Administration (BBA)",
+            "content": "Program: Bachelor of Business Administration (BBA)\nApproved Seat Intake: 60 seats\nDegree Level: UG\nInstitution: Narula Institute of Technology (NIT), Kolkata",
+            "metadata": {
+                "stream": "Bachelor of Business Administration (BBA)",
+                "seats": "60 seats"
+            }
+        },
+        {
+            "chunk_id": "chunk_00025",
+            "intent": "seat",
+            "category": "seat_matrix",
+            "title": "Seat Intake for Diploma in Engineering (Civil, Electrical, Mechanical, ETCE)",
+            "content": "Program: Diploma in Engineering (Civil, Electrical, Mechanical, ETCE)\nApproved Seat Intake: 30 to 60 seats per branch\nDegree Level: Diploma\nInstitution: Narula Institute of Technology (NIT), Kolkata",
+            "metadata": {
+                "stream": "Diploma in Engineering (Civil, Electrical, Mechanical, ETCE)",
+                "seats": "30 to 60 seats per branch"
+            }
+        },
+        {
+            "chunk_id": "chunk_00026",
+            "intent": "eligibility",
+            "category": "eligibility",
+            "title": "Eligibility Criteria and Entrance Exams for B.Tech Regular Programs (4 Years)",
+            "content": "Program: B.Tech Regular Programs (4 Years)\nEligibility Requirements: Passed 10+2 with Physics & Mathematics along with Chemistry / Biotechnology / Biology / Computer Science. Minimum 45% marks in above subjects taken together (40% for reserved category SC/ST/OBC/PwD). Valid rank in WBJEE / JEE (Main) / CEE-AMPAI.\nInstitution: Narula Institute of Technology (NIT)",
+            "metadata": {
+                "program": "B.Tech Regular Programs (4 Years)"
+            }
+        },
+        {
+            "chunk_id": "chunk_00027",
+            "intent": "eligibility",
+            "category": "eligibility",
+            "title": "Eligibility Criteria and Entrance Exams for B.Tech Lateral Entry (2nd Year)",
+            "content": "Program: B.Tech Lateral Entry (2nd Year)\nEligibility Requirements: Passed Diploma in Engineering/Technology with at least 45% marks (40% for SC/ST) or B.Sc Degree with Mathematics in 10+2. Valid rank in WB-JELET counseling.\nInstitution: Narula Institute of Technology (NIT)",
+            "metadata": {
+                "program": "B.Tech Lateral Entry (2nd Year)"
+            }
+        },
+        {
+            "chunk_id": "chunk_00028",
+            "intent": "eligibility",
+            "category": "eligibility",
+            "title": "Eligibility Criteria and Entrance Exams for MCA Program (2 Years)",
+            "content": "Program: MCA Program (2 Years)\nEligibility Requirements: Passed BCA or B.Sc/B.Com/B.A with Mathematics at 10+2 or Graduation level with minimum 50% marks (45% for SC/ST). Valid rank in WB-JECA.\nInstitution: Narula Institute of Technology (NIT)",
+            "metadata": {
+                "program": "MCA Program (2 Years)"
+            }
+        },
+        {
+            "chunk_id": "chunk_00029",
+            "intent": "eligibility",
+            "category": "eligibility",
+            "title": "Eligibility Criteria and Entrance Exams for BCA and BBA (3 Years)",
+            "content": "Program: BCA and BBA (3 Years)\nEligibility Requirements: Passed 10+2 from recognized board with English and Mathematics / Business Math / Statistics / Computer Application. Minimum 45% marks.\nInstitution: Narula Institute of Technology (NIT)",
+            "metadata": {
+                "program": "BCA and BBA (3 Years)"
+            }
+        },
+        {
+            "chunk_id": "chunk_00030",
+            "intent": "eligibility",
+            "category": "eligibility",
+            "title": "Eligibility Criteria and Entrance Exams for M.Tech Programs (2 Years)",
+            "content": "Program: M.Tech Programs (2 Years)\nEligibility Requirements: B.Tech/B.E in relevant branch with at least 60% marks or 6.5 CGPA. Valid GATE score or PGET conducted by MAKAUT.\nInstitution: Narula Institute of Technology (NIT)",
+            "metadata": {
+                "program": "M.Tech Programs (2 Years)"
+            }
+        },
+        {
+            "chunk_id": "chunk_00031",
+            "intent": "scholarship",
+            "category": "scholarship",
+            "title": "Scholarship Scheme: WBJEE Tuition Fee Waiver (TFW)",
+            "content": "Scholarship Name: WBJEE Tuition Fee Waiver (TFW)\nDetails & Benefits: 100% Tuition Fee Waiver allotted via centralized WBJEE counseling for meritorious students whose annual family income is below ₹2.5 Lakhs.\nInstitution: Narula Institute of Technology (NIT)",
+            "metadata": {
+                "scholarship": "WBJEE Tuition Fee Waiver (TFW)"
+            }
+        },
+        {
+            "chunk_id": "chunk_00032",
+            "intent": "scholarship",
+            "category": "scholarship",
+            "title": "Scholarship Scheme: Swami Vivekananda Merit-cum-Means (SVMCM)",
+            "content": "Scholarship Name: Swami Vivekananda Merit-cum-Means (SVMCM)\nDetails & Benefits: West Bengal state scholarship of ₹60,000 per year for B.Tech students who secured 60%+ in 10+2 with family income under ₹2.5 Lakhs.\nInstitution: Narula Institute of Technology (NIT)",
+            "metadata": {
+                "scholarship": "Swami Vivekananda Merit-cum-Means (SVMCM)"
+            }
+        },
+        {
+            "chunk_id": "chunk_00033",
+            "intent": "scholarship",
+            "category": "scholarship",
+            "title": "Scholarship Scheme: Sikh Community Freeship",
+            "content": "Scholarship Name: Sikh Community Freeship\nDetails & Benefits: Up to 50% freeship on tuition fees for students belonging to the Sikh community through Gurudwara verification.\nInstitution: Narula Institute of Technology (NIT)",
+            "metadata": {
+                "scholarship": "Sikh Community Freeship"
+            }
+        },
+        {
+            "chunk_id": "chunk_00034",
+            "intent": "document",
+            "category": "documents",
+            "title": "Mandatory Documents Required for Admission and Physical Verification",
+            "content": "Mandatory Document Checklist for Physical Verification at Narula Institute of Technology:\n1. WBJEE / JEE Main / JELET / JECA Rank Card\n2. Provisional Seat Allotment Letter from Centralized Counseling\n3. 10th Standard Admit Card / Birth Certificate (Proof of Age)\n4. 10th and 12th Standard Mark sheets and Passing Certificates\n5. Domicile Certificate (for West Bengal domicile quota / TFW / SVMCM)\n6. Category / Caste Certificate (SC/ST/OBC-A/OBC-B/PwD if applicable)\n7. Family Income Certificate (issued by SDO/BDO for SVMCM/TFW)\n8. Medical Fitness Certificate and Eye Test Certificate\n9. 5 Passport Size Color Photographs\n10. Copy of Aadhaar Card (Student and Parent)\n11. Anti-Ragging Undertakings signed online by student and parent on antiragging.in",
+            "metadata": {
+                "type": "checklist"
+            }
+        }
+    ]
+}
