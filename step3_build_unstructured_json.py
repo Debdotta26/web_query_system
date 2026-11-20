@@ -42,6 +42,50 @@ def build_knowledge_base():
         })
         chunk_counter += 1
 
+    # 1b. B.Tech Lateral Entry (Direct 2nd Year) Fees
+    lateral_fees = [
+        {"branch": "Lateral Entry CSE, CSE (AIML), IT, CSE (DS), CST, CSBS", "sem3": "₹93,425", "sem4_6": "₹63,675", "sem7": "₹64,175", "sem8": "₹65,175", "total_3yr": "₹4,13,800"},
+        {"branch": "Lateral Entry ECE", "sem3": "₹88,175", "sem4_6": "₹58,425", "sem7": "₹58,925", "sem8": "₹59,925", "total_3yr": "₹3,82,300"},
+        {"branch": "Lateral Entry EE, CE, ME", "sem3": "₹77,175", "sem4_6": "₹47,425", "sem7": "₹47,925", "sem8": "₹48,925", "total_3yr": "₹3,16,300"},
+        {"branch": "Lateral Entry ECS", "sem3": "₹86,425", "sem4_6": "₹56,675", "sem7": "₹57,175", "sem8": "₹58,175", "total_3yr": "₹3,71,800"}
+    ]
+    for item in lateral_fees:
+        chunks.append({
+            "chunk_id": f"chunk_{chunk_counter:05d}",
+            "intent": "fee",
+            "category": "lateral_fee",
+            "title": f"B.Tech Lateral Entry (2nd Year) Fee Structure for {item['branch']}",
+            "content": (
+                f"B.Tech Lateral Entry Fee Structure for {item['branch']} (Direct 2nd Year / 3-Year Degree):\n"
+                f"• 3rd Semester Fee (Payable at Admission): {item['sem3']}\n"
+                f"• 4th, 5th, and 6th Semester Fees: {item['sem4_6']} per semester\n"
+                f"• 7th Semester Fee: {item['sem7']} | 8th Semester Fee: {item['sem8']}\n"
+                f"• Total 3-Year Program Fee (6 Semesters): {item['total_3yr']}\n"
+                "Eligibility: Diploma in Engineering or B.Sc with valid WB-JELET rank."
+            ),
+            "metadata": {"branch": item["branch"], "admission_fee": item["sem3"], "total": item["total_3yr"]}
+        })
+        chunk_counter += 1
+
+    # 1c. BCA, BBA, Diploma & PG (MCA / M.Tech) Fees
+    other_fees = [
+        ("Bachelor of Computer Applications (BCA)", "1st Sem: ₹68,200 | 2nd-5th Sem: ₹49,500/sem | 6th Sem: ₹51,000 | Total (3 Yrs): ₹4,16,700"),
+        ("Bachelor of Business Administration (BBA)", "1st Sem: ₹60,300 | 2nd-5th Sem: ₹41,600/sem | 6th Sem: ₹43,100 | Total (3 Yrs): ₹3,53,500"),
+        ("Diploma in Engineering (Counseling & Direct)", "Counseling: 1st Sem ₹33,600, 2nd-6th Sem ₹16,000/sem (Total ₹1,14,100) | Direct: 1st Sem ₹33,600, 2nd-6th Sem ₹18,000/sem (Total ₹1,24,100)"),
+        ("Master of Computer Applications (MCA - 2 Years)", "1st Sem: ₹87,100 | 2nd Sem: ₹73,000 | 3rd Sem: ₹73,500 | 4th Sem: ₹74,500 | Total (2 Yrs): ₹3,08,100"),
+        ("Master of Technology (M.Tech - 2 Years)", "1st Sem: ₹77,008 | 2nd Sem: ₹50,000 | 3rd Sem: ₹51,000 | 4th Sem: ₹52,592 | Total (2 Yrs): ₹2,30,600")
+    ]
+    for prog_name, fee_desc in other_fees:
+        chunks.append({
+            "chunk_id": f"chunk_{chunk_counter:05d}",
+            "intent": "fee",
+            "category": "program_fee",
+            "title": f"Fee Structure for {prog_name}",
+            "content": f"Fee Structure for {prog_name} at Narula Institute of Technology:\n{fee_desc}",
+            "metadata": {"program": prog_name}
+        })
+        chunk_counter += 1
+
     # 2. Hostel & Uniform
     chunks.append({
         "chunk_id": f"chunk_{chunk_counter:05d}",
@@ -108,6 +152,25 @@ def build_knowledge_base():
             "metadata": {"stream": stream, "seats": seats}
         })
         chunk_counter += 1
+
+    # 4b. Departments, Streams & Programs Summary Chunk
+    chunks.append({
+        "chunk_id": f"chunk_{chunk_counter:05d}",
+        "intent": "seat",
+        "category": "departments_overview",
+        "title": "All Departments, Streams, Branches, and Courses Offered at Narula Institute of Technology (NIT)",
+        "content": (
+            "Departments, Branches, Streams, and Seat Distribution at Narula Institute of Technology (NIT):\n"
+            "• B.Tech (UG - 11 Streams): CSE (300 seats), CSE AI & ML (240 seats), IT (180 seats), ECE (150 seats), "
+            "CSE Data Science (120 seats), EE (60 seats), CE (60 seats), ME (60 seats), CST (60 seats), CSBS (60 seats), ECS (30 seats).\n"
+            "• Postgraduate (PG): M.Tech in CSE, ECE, EE, CE (18 seats each) and MCA (60 seats).\n"
+            "• Undergraduate Management & Computer Applications: BCA (120 seats) and BBA (60 seats).\n"
+            "• Diploma / Polytechnic: Civil, Electrical, Mechanical, and ETCE (30 to 60 seats per branch).\n"
+            "Total Capacity: 2000+ seats across 23+ programs and 11+ engineering/management departments."
+        ),
+        "metadata": {"type": "departments_overview"}
+    })
+    chunk_counter += 1
 
     # 5. Eligibility Criteria
     eligibility_info = [
