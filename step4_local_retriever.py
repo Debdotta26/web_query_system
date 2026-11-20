@@ -7,6 +7,7 @@ import re
 import math
 import json
 from collections import Counter
+import difflib
 import numpy as np
 from config import UNSTRUCTURED_DATA_JSON
 
@@ -15,10 +16,30 @@ def tokenize(text):
         return []
     return re.findall(r"[a-zA-Z0-9_]{2,}", text.lower())
 
+ADMISSION_VOCAB = [
+    "admission", "admissions", "btech", "b.tech", "mtech", "m.tech", "mca", "bca", "bba", "diploma", "tech",
+    "department", "departments", "branch", "branches", "stream", "streams", "program", "programs",
+    "seat", "seats", "intake", "capacity", "fee", "fees", "semester", "tuition", "hostel", "uniform",
+    "eligibility", "eligible", "cutoff", "percentage", "scholarship", "scholarships", "waiver",
+    "placement", "placements", "package", "salary", "recruiter", "recruiters",
+    "document", "documents", "certificate", "verification", "principal", "director", "founder", "narula"
+]
+
+def normalize_typos(query):
+    words = re.findall(r"[a-zA-Z0-9_.]+|[^a-zA-Z0-9_.\s]+", query)
+    corrected = []
+    for w in words:
+        lw = w.lower().strip(".")
+        if len(lw) >= 5 and lw.isalpha() and lw not in ADMISSION_VOCAB:
+            matches = difflib.get_close_matches(lw, ADMISSION_VOCAB, n=1, cutoff=0.80)
+            corrected.append(matches[0] if matches else w)
+        else:
+            corrected.append(w)
+    return " ".join(corrected)
+
 def detect_query_intent(query):
     q = query.lower()
 
-    # 1. Placement & Career Statistics (Evaluated FIRST so "placement percentage" is not hijacked by eligibility!)
     if any(w in q for w in [
         "placement", "placements", "placed", "salary", "package", "recruiter", 
         "recruiters", "lpa", "highest package", "average package", 
@@ -26,7 +47,6 @@ def detect_query_intent(query):
     ]):
         return "placement"
 
-    # 2. Institutional Queries (Location, Transport, Founder, Principal, Clubs)
     if any(w in q for w in [
         "where is", "located", "location", "address", "railway", "station", 
         "metro", "how to reach", "bus route", "transport", "distance",
@@ -38,7 +58,6 @@ def detect_query_intent(query):
     ]):
         return "unlisted_nit_query"
 
-    # 3. Subject / Career Comparisons (Trigger Gemini API)
     if any(w in q for w in [
         "difference between", "difference in", "compare", "vs", "versus", 
         "which is better", "job scope", "better job", "career prospects",
@@ -46,27 +65,25 @@ def detect_query_intent(query):
     ]):
         return "comparison_or_advice"
 
-    # 4. Hostel & Living
     if any(w in q for w in ["hostel", "mess", "accommodation", "room fee"]):
         return "hostel"
 
-    # 5. Fees & Tuition
     if any(w in q for w in ["fee", "fees", "cost", "charge", "tuition", "1st sem", "first sem", "annual fee", "total fee"]):
         return "fee"
 
-    # 6. Seats & Intake
-    if any(w in q for w in ["seat", "seats", "intake", "capacity", "how many seats"]):
+    if any(w in q for w in [
+        "seat", "seats", "intake", "capacity", "how many seats",
+        "department", "departments", "branch", "branches", "stream", "streams",
+        "program", "programs", "course", "courses"
+    ]):
         return "seat"
 
-    # 7. Documents & Reporting
     if any(w in q for w in ["document", "documents", "certificate", "mark sheet", "marksheet", "admit card", "verification", "reporting"]):
         return "document"
 
-    # 8. Scholarships & Aid
     if any(w in q for w in ["scholarship", "scholarships", "tfw", "waiver", "freeship", "svmcm", "financial aid"]):
         return "scholarship"
 
-    # 9. Eligibility & Cutoffs (Only matches percentage if linked to academic qualifications)
     if any(w in q for w in ["eligibility", "eligible", "cutoff", "cut off", "pcm", "qualification", "pass marks"]):
         return "eligibility"
     if ("percentage" in q or "percent" in q) and any(w in q for w in ["marks", "10+2", "12th", "10th", "board", "academic"]):
@@ -74,7 +91,6 @@ def detect_query_intent(query):
 
     return "general"
 
-# Branch / Degree keywords to prevent cross-branch mismatches (e.g. ECE vs CSE, MCA vs B.Tech)
 ENTITY_ALIASES = {
     "cse": ["cse", "computer science and engineering"],
     "aiml": ["aiml", "ai & ml", "ai and machine learning", "artificial intelligence"],
@@ -90,6 +106,7 @@ ENTITY_ALIASES = {
     "mca": ["mca", "master of computer applications"],
     "bca": ["bca", "bachelor of computer applications"],
     "bba": ["bba", "bachelor of business administration"],
+    "btech": ["btech", "b.tech"],
     "mtech": ["m.tech", "mtech", "master of technology"],
     "diploma": ["diploma", "polytechnic"],
     "lateral": ["lateral", "jelet", "2nd year"]
@@ -203,6 +220,7 @@ class LocalRetriever:
         if not self.chunks:
             return []
 
+        query = normalize_typos(query)
         query_intent = detect_query_intent(query)
         query_entities = detect_query_entities(query)
 
@@ -241,7 +259,6 @@ class LocalRetriever:
             chunk_intent = chunk.get("intent", "")
             chunk_text = f" {(chunk.get('title', '') + ' ' + chunk.get('content', '')).lower()} "
 
-            # 1. Intent Reranking
             if query_intent != "general":
                 if chunk_intent == query_intent:
                     final_scores[idx] += 0.25
@@ -252,11 +269,23 @@ class LocalRetriever:
                 elif query_intent == "placement" and chunk_intent != "placement":
                     final_scores[idx] -= 0.30
 
-            # 2. Branch/Program Entity Reranking (prevents cross-branch mismatches)
+            if any(w in query.lower() for w in ["department", "departments", "branches", "streams", "all programs", "courses offered"]) and not query_entities:
+                if chunk.get("category") in ["departments_overview", "seat_matrix_overview"]:
+                    final_scores[idx] += 0.30
+
             if query_entities:
                 for ent in query_entities:
                     if any(alias in chunk_text for alias in ENTITY_ALIASES[ent]):
                         final_scores[idx] += 0.20
+                title_lower = chunk.get('title', '').lower()
+                if 'cse' in query_entities and 'ds' not in query_entities and 'csbs' not in query_entities:
+                    if 'data science' in title_lower or 'business systems' in title_lower:
+                        final_scores[idx] -= 0.25
+                if 'btech' in query_entities and 'mtech' not in query_entities and 'lateral' not in query_entities:
+                    if 'm.tech' in title_lower or 'lateral' in title_lower:
+                        final_scores[idx] -= 0.30
+                if 'lateral' in query_entities and 'lateral' not in title_lower:
+                    final_scores[idx] -= 0.30
 
         top_indices = np.argsort(final_scores)[::-1][:top_k]
         results = []
@@ -270,7 +299,3 @@ class LocalRetriever:
                 "is_relevant": relevant
             })
         return results
-
-if __name__ == "__main__":
-    retriever = LocalRetriever()
-    print(f"Retriever initialized with {len(retriever.chunks)} chunks.")
