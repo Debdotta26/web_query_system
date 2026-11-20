@@ -16,6 +16,22 @@ NIT_KEYWORDS = [
     "autonomous", "accreditation", "history", "established", "location", "address"
 ]
 
+def is_gibberish(query):
+    """Detects random keyboard mash (e.g. hhjstiihth) or non-meaningful inputs so we do not waste an API call."""
+    import re
+    q = query.strip()
+    words = re.findall(r"[a-zA-Z]{2,}", q)
+    if not words:
+        return True
+    if len(words) == 1 and len(words[0]) >= 5:
+        w = words[0].lower()
+        vowels = sum(1 for ch in w if ch in "aeiou")
+        if vowels / len(w) < 0.25 or re.search(r"[bcdfghjklmnpqrstvwxyz]{5,}", w):
+            return True
+    if len(words) == 1 and re.search(r"[bcdfghjklmnpqrstvwxyz]{5,}", words[0].lower()):
+        return True
+    return False
+
 def is_nit_related(query):
     q = query.lower()
     return any(k in q for k in NIT_KEYWORDS)
@@ -64,16 +80,18 @@ class HybridAdmissionQA:
                         for m in models_data 
                         if "generateContent" in m.get("supportedGenerationMethods", [])
                     ]
-                    for pref in ["gemini-3.5-flash", "gemini-3.8-flash", "gemini-flash-latest", "gemini-2.5-flash", "gemini-pro"]:
+                    # Respect explicit GEMINI_MODEL env var first if available
+                    env_model = os.environ.get("GEMINI_MODEL", "").strip()
+                    if env_model and env_model in available_names:
+                        self.active_model = env_model
+                        self.active_api_version = ver
+                        return
+                    for pref in ["gemini-2.5-flash-lite", "gemini-2.5-flash", "gemini-3.1-flash-lite", "gemma-4-26b-a4b-it", "gemini-3.5-flash"]:
                         for avail in available_names:
-                            if pref in avail:
+                            if pref == avail:
                                 self.active_model = avail
                                 self.active_api_version = ver
                                 return
-                    if available_names:
-                        self.active_model = available_names[0]
-                        self.active_api_version = ver
-                        return
             except Exception:
                 pass
 
@@ -145,31 +163,40 @@ class HybridAdmissionQA:
 
         models_to_try = [
             (self.active_api_version, self.active_model),
-            ("v1beta", "gemini-3.5-flash"),
-            ("v1", "gemini-3.5-flash"),
-            ("v1beta", "gemini-flash-latest"),
-            ("v1", "gemini-3.8-flash")
+            ("v1beta", "gemini-2.5-flash-lite"),
+            ("v1beta", "gemini-3.5-flash-lite"),
+            ("v1beta", "gemini-3.1-flash-lite"),
+            ("v1", "gemini-2.5-flash"),
+            ("v1beta", "gemma-4-26b-a4b-it"),
+            ("v1beta", "gemini-3.5-flash")
         ]
 
         payload = {
             "contents": [{"parts": [{"text": system_prompt}]}],
             "generationConfig": {
                 "temperature": 0.3,
-                "maxOutputTokens": 2048
+                "maxOutputTokens": 1024,
+                "thinkingConfig": {
+                    "thinkingBudget": 128
+                }
             }
         }
         headers = {"Content-Type": "application/json"}
 
+        last_error = "No endpoints attempted."
+        seen = set()
         for ver, mod in models_to_try:
+            if (ver, mod) in seen:
+                continue
+            seen.add((ver, mod))
             url = f"https://generativelanguage.googleapis.com/{ver}/models/{mod}:generateContent?key={self.api_key}"
             try:
-                resp = requests.post(url, headers=headers, json=payload, timeout=30)
+                resp = requests.post(url, headers=headers, json=payload, timeout=45)
                 if resp.status_code == 200:
                     self.active_api_version = ver
                     self.active_model = mod
                     data = resp.json()
                     
-                    # Extract exact token counts from Gemini API usageMetadata
                     usage = data.get("usageMetadata", {})
                     token_info = {
                         "prompt_tokens": usage.get("promptTokenCount", 0),
@@ -183,13 +210,48 @@ class HybridAdmissionQA:
                         parts = candidates[0].get("content", {}).get("parts", [])
                         if parts:
                             return parts[0].get("text", "").strip(), token_info
-            except Exception:
+                    last_error = f"{ver}/{mod} returned 200 but empty candidates."
+                else:
+                    last_error = f"{ver}/{mod} HTTP {resp.status_code}: {resp.text[:250]}"
+                    if resp.status_code in (400, 401, 403):
+                        break
+            except Exception as e:
+                last_error = f"{ver}/{mod} error: {e}"
                 continue
 
-        return "Gemini API could not generate a response across available model endpoints.", empty_tokens
+        return f"Gemini API could not generate a response. Details: {last_error}", empty_tokens
 
     def ask(self, query):
         self.stats["total_queries"] += 1
+        if is_gibberish(query):
+            token_info = {"prompt_tokens": 0, "output_tokens": 0, "thoughts_tokens": 0, "total_tokens": 0}
+            res = {
+                "query": query,
+                "status": "LOCAL_WEBSITE_HIT",
+                "cost": "$0.00 (Input Guard - No API call)",
+                "confidence_score": 0.0,
+                "threshold": self.threshold,
+                "tokens": token_info,
+                "answer": (
+                    "I could not understand that query. Please ask a valid question about "
+                    "Narula Institute of Technology (e.g., fees, seats, departments, eligibility, placements, or campus info)."
+                ),
+                "citation": {
+                    "source": "Local Input Validation Guard",
+                    "title": "Invalid / Unrecognized Query",
+                    "category": "input_guard"
+                }
+            }
+            self.stats["local_hits"] += 1
+            self._save_log({
+                "timestamp": datetime.now().isoformat(),
+                "query": query,
+                "status": res["status"],
+                "score": 0.0,
+                "tokens": token_info
+            })
+            return res
+
         results = self.retriever.search(query, top_k=3)
         top_match = results[0] if results else None
         top_score = top_match["score"] if top_match else 0.0
