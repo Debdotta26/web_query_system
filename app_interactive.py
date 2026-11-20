@@ -1,6 +1,8 @@
 """
-Interactive CLI
+Interactive Terminal Assistant for NIT Admission Inquiries
+With 3-tier routing: Local Data, NIT College API, and General Knowledge API.
 """
+
 from step5_hybrid_qa_engine import HybridAdmissionQA
 
 def main():
@@ -8,7 +10,7 @@ def main():
     print("🎓 NARULA INSTITUTE OF TECHNOLOGY (NIT) - SMART ADMISSION ASSISTANT")
     print("=" * 70)
     print("• Tier 1 [GREEN] : Official admission web page data (Fees, Seats, Docs) [$0.00]")
-    print("• Tier 2 [BLUE]  : Unlisted NIT college queries (Founder, Principal, Campus) [API]")
+    print("• Tier 2 [BLUE]  : Unlisted NIT college queries (Founder, History, Campus) [API]")
     print("• Tier 3 [YELLOW]: Out-of-domain general knowledge (Coding, Science)     [API]")
     print("• Type 'stats' for metrics, or 'exit' / 'quit' to close.")
     print("=" * 70)
