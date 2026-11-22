@@ -1,7 +1,7 @@
 {
     "institution": "Narula Institute of Technology (NIT)",
     "source_url": "https://www.nit.ac.in/admission/",
-    "total_chunks": 34,
+    "total_chunks": 44,
     "chunks": [
         {
             "chunk_id": "chunk_00001",
@@ -89,6 +89,104 @@
         },
         {
             "chunk_id": "chunk_00008",
+            "intent": "fee",
+            "category": "lateral_fee",
+            "title": "B.Tech Lateral Entry (2nd Year) Fee Structure for Lateral Entry CSE, CSE (AIML), IT, CSE (DS), CST, CSBS",
+            "content": "B.Tech Lateral Entry Fee Structure for Lateral Entry CSE, CSE (AIML), IT, CSE (DS), CST, CSBS (Direct 2nd Year / 3-Year Degree):\n• 3rd Semester Fee (Payable at Admission): ₹93,425\n• 4th, 5th, and 6th Semester Fees: ₹63,675 per semester\n• 7th Semester Fee: ₹64,175 | 8th Semester Fee: ₹65,175\n• Total 3-Year Program Fee (6 Semesters): ₹4,13,800\nEligibility: Diploma in Engineering or B.Sc with valid WB-JELET rank.",
+            "metadata": {
+                "branch": "Lateral Entry CSE, CSE (AIML), IT, CSE (DS), CST, CSBS",
+                "admission_fee": "₹93,425",
+                "total": "₹4,13,800"
+            }
+        },
+        {
+            "chunk_id": "chunk_00009",
+            "intent": "fee",
+            "category": "lateral_fee",
+            "title": "B.Tech Lateral Entry (2nd Year) Fee Structure for Lateral Entry ECE",
+            "content": "B.Tech Lateral Entry Fee Structure for Lateral Entry ECE (Direct 2nd Year / 3-Year Degree):\n• 3rd Semester Fee (Payable at Admission): ₹88,175\n• 4th, 5th, and 6th Semester Fees: ₹58,425 per semester\n• 7th Semester Fee: ₹58,925 | 8th Semester Fee: ₹59,925\n• Total 3-Year Program Fee (6 Semesters): ₹3,82,300\nEligibility: Diploma in Engineering or B.Sc with valid WB-JELET rank.",
+            "metadata": {
+                "branch": "Lateral Entry ECE",
+                "admission_fee": "₹88,175",
+                "total": "₹3,82,300"
+            }
+        },
+        {
+            "chunk_id": "chunk_00010",
+            "intent": "fee",
+            "category": "lateral_fee",
+            "title": "B.Tech Lateral Entry (2nd Year) Fee Structure for Lateral Entry EE, CE, ME",
+            "content": "B.Tech Lateral Entry Fee Structure for Lateral Entry EE, CE, ME (Direct 2nd Year / 3-Year Degree):\n• 3rd Semester Fee (Payable at Admission): ₹77,175\n• 4th, 5th, and 6th Semester Fees: ₹47,425 per semester\n• 7th Semester Fee: ₹47,925 | 8th Semester Fee: ₹48,925\n• Total 3-Year Program Fee (6 Semesters): ₹3,16,300\nEligibility: Diploma in Engineering or B.Sc with valid WB-JELET rank.",
+            "metadata": {
+                "branch": "Lateral Entry EE, CE, ME",
+                "admission_fee": "₹77,175",
+                "total": "₹3,16,300"
+            }
+        },
+        {
+            "chunk_id": "chunk_00011",
+            "intent": "fee",
+            "category": "lateral_fee",
+            "title": "B.Tech Lateral Entry (2nd Year) Fee Structure for Lateral Entry ECS",
+            "content": "B.Tech Lateral Entry Fee Structure for Lateral Entry ECS (Direct 2nd Year / 3-Year Degree):\n• 3rd Semester Fee (Payable at Admission): ₹86,425\n• 4th, 5th, and 6th Semester Fees: ₹56,675 per semester\n• 7th Semester Fee: ₹57,175 | 8th Semester Fee: ₹58,175\n• Total 3-Year Program Fee (6 Semesters): ₹3,71,800\nEligibility: Diploma in Engineering or B.Sc with valid WB-JELET rank.",
+            "metadata": {
+                "branch": "Lateral Entry ECS",
+                "admission_fee": "₹86,425",
+                "total": "₹3,71,800"
+            }
+        },
+        {
+            "chunk_id": "chunk_00012",
+            "intent": "fee",
+            "category": "program_fee",
+            "title": "Fee Structure for Bachelor of Computer Applications (BCA)",
+            "content": "Fee Structure for Bachelor of Computer Applications (BCA) at Narula Institute of Technology:\n1st Sem: ₹68,200 | 2nd-5th Sem: ₹49,500/sem | 6th Sem: ₹51,000 | Total (3 Yrs): ₹4,16,700",
+            "metadata": {
+                "program": "Bachelor of Computer Applications (BCA)"
+            }
+        },
+        {
+            "chunk_id": "chunk_00013",
+            "intent": "fee",
+            "category": "program_fee",
+            "title": "Fee Structure for Bachelor of Business Administration (BBA)",
+            "content": "Fee Structure for Bachelor of Business Administration (BBA) at Narula Institute of Technology:\n1st Sem: ₹60,300 | 2nd-5th Sem: ₹41,600/sem | 6th Sem: ₹43,100 | Total (3 Yrs): ₹3,53,500",
+            "metadata": {
+                "program": "Bachelor of Business Administration (BBA)"
+            }
+        },
+        {
+            "chunk_id": "chunk_00014",
+            "intent": "fee",
+            "category": "program_fee",
+            "title": "Fee Structure for Diploma in Engineering (Counseling & Direct)",
+            "content": "Fee Structure for Diploma in Engineering (Counseling & Direct) at Narula Institute of Technology:\nCounseling: 1st Sem ₹33,600, 2nd-6th Sem ₹16,000/sem (Total ₹1,14,100) | Direct: 1st Sem ₹33,600, 2nd-6th Sem ₹18,000/sem (Total ₹1,24,100)",
+            "metadata": {
+                "program": "Diploma in Engineering (Counseling & Direct)"
+            }
+        },
+        {
+            "chunk_id": "chunk_00015",
+            "intent": "fee",
+            "category": "program_fee",
+            "title": "Fee Structure for Master of Computer Applications (MCA - 2 Years)",
+            "content": "Fee Structure for Master of Computer Applications (MCA - 2 Years) at Narula Institute of Technology:\n1st Sem: ₹87,100 | 2nd Sem: ₹73,000 | 3rd Sem: ₹73,500 | 4th Sem: ₹74,500 | Total (2 Yrs): ₹3,08,100",
+            "metadata": {
+                "program": "Master of Computer Applications (MCA - 2 Years)"
+            }
+        },
+        {
+            "chunk_id": "chunk_00016",
+            "intent": "fee",
+            "category": "program_fee",
+            "title": "Fee Structure for Master of Technology (M.Tech - 2 Years)",
+            "content": "Fee Structure for Master of Technology (M.Tech - 2 Years) at Narula Institute of Technology:\n1st Sem: ₹77,008 | 2nd Sem: ₹50,000 | 3rd Sem: ₹51,000 | 4th Sem: ₹52,592 | Total (2 Yrs): ₹2,30,600",
+            "metadata": {
+                "program": "Master of Technology (M.Tech - 2 Years)"
+            }
+        },
+        {
+            "chunk_id": "chunk_00017",
             "intent": "hostel",
             "category": "hostel_fees",
             "title": "Hostel Fees, Food Mess, and Uniform Charges at Narula Institute of Technology",
@@ -99,7 +197,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00009",
+            "chunk_id": "chunk_00018",
             "intent": "placement",
             "category": "placements",
             "title": "Campus Placements, Highest Package, Average Salary, and Placement Percentage at Narula Institute of Technology",
@@ -111,7 +209,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00010",
+            "chunk_id": "chunk_00019",
             "intent": "seat",
             "category": "seat_matrix",
             "title": "Seat Intake for Computer Science and Engineering (CSE)",
@@ -122,7 +220,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00011",
+            "chunk_id": "chunk_00020",
             "intent": "seat",
             "category": "seat_matrix",
             "title": "Seat Intake for CSE (AI and Machine Learning)",
@@ -133,7 +231,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00012",
+            "chunk_id": "chunk_00021",
             "intent": "seat",
             "category": "seat_matrix",
             "title": "Seat Intake for Information Technology (IT)",
@@ -144,7 +242,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00013",
+            "chunk_id": "chunk_00022",
             "intent": "seat",
             "category": "seat_matrix",
             "title": "Seat Intake for Electronics and Communications Engineering (ECE)",
@@ -155,7 +253,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00014",
+            "chunk_id": "chunk_00023",
             "intent": "seat",
             "category": "seat_matrix",
             "title": "Seat Intake for CSE (Data Science)",
@@ -166,7 +264,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00015",
+            "chunk_id": "chunk_00024",
             "intent": "seat",
             "category": "seat_matrix",
             "title": "Seat Intake for Electrical Engineering (EE)",
@@ -177,7 +275,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00016",
+            "chunk_id": "chunk_00025",
             "intent": "seat",
             "category": "seat_matrix",
             "title": "Seat Intake for Civil Engineering (CE)",
@@ -188,7 +286,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00017",
+            "chunk_id": "chunk_00026",
             "intent": "seat",
             "category": "seat_matrix",
             "title": "Seat Intake for Mechanical Engineering (ME)",
@@ -199,7 +297,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00018",
+            "chunk_id": "chunk_00027",
             "intent": "seat",
             "category": "seat_matrix",
             "title": "Seat Intake for Computer Science and Technology (CST)",
@@ -210,7 +308,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00019",
+            "chunk_id": "chunk_00028",
             "intent": "seat",
             "category": "seat_matrix",
             "title": "Seat Intake for CSE (Business Systems - CSBS)",
@@ -221,7 +319,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00020",
+            "chunk_id": "chunk_00029",
             "intent": "seat",
             "category": "seat_matrix",
             "title": "Seat Intake for Electronics and Computer Science (ECS)",
@@ -232,7 +330,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00021",
+            "chunk_id": "chunk_00030",
             "intent": "seat",
             "category": "seat_matrix",
             "title": "Seat Intake for Master of Computer Applications (MCA)",
@@ -243,7 +341,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00022",
+            "chunk_id": "chunk_00031",
             "intent": "seat",
             "category": "seat_matrix",
             "title": "Seat Intake for M.Tech in CSE, ECE, EE, CE",
@@ -254,7 +352,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00023",
+            "chunk_id": "chunk_00032",
             "intent": "seat",
             "category": "seat_matrix",
             "title": "Seat Intake for Bachelor of Computer Applications (BCA)",
@@ -265,7 +363,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00024",
+            "chunk_id": "chunk_00033",
             "intent": "seat",
             "category": "seat_matrix",
             "title": "Seat Intake for Bachelor of Business Administration (BBA)",
@@ -276,7 +374,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00025",
+            "chunk_id": "chunk_00034",
             "intent": "seat",
             "category": "seat_matrix",
             "title": "Seat Intake for Diploma in Engineering (Civil, Electrical, Mechanical, ETCE)",
@@ -287,7 +385,17 @@
             }
         },
         {
-            "chunk_id": "chunk_00026",
+            "chunk_id": "chunk_00035",
+            "intent": "seat",
+            "category": "departments_overview",
+            "title": "All Departments, Streams, Branches, and Courses Offered at Narula Institute of Technology (NIT)",
+            "content": "Departments, Branches, Streams, and Seat Distribution at Narula Institute of Technology (NIT):\n• B.Tech (UG - 11 Streams): CSE (300 seats), CSE AI & ML (240 seats), IT (180 seats), ECE (150 seats), CSE Data Science (120 seats), EE (60 seats), CE (60 seats), ME (60 seats), CST (60 seats), CSBS (60 seats), ECS (30 seats).\n• Postgraduate (PG): M.Tech in CSE, ECE, EE, CE (18 seats each) and MCA (60 seats).\n• Undergraduate Management & Computer Applications: BCA (120 seats) and BBA (60 seats).\n• Diploma / Polytechnic: Civil, Electrical, Mechanical, and ETCE (30 to 60 seats per branch).\nTotal Capacity: 2000+ seats across 23+ programs and 11+ engineering/management departments.",
+            "metadata": {
+                "type": "departments_overview"
+            }
+        },
+        {
+            "chunk_id": "chunk_00036",
             "intent": "eligibility",
             "category": "eligibility",
             "title": "Eligibility Criteria and Entrance Exams for B.Tech Regular Programs (4 Years)",
@@ -297,7 +405,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00027",
+            "chunk_id": "chunk_00037",
             "intent": "eligibility",
             "category": "eligibility",
             "title": "Eligibility Criteria and Entrance Exams for B.Tech Lateral Entry (2nd Year)",
@@ -307,7 +415,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00028",
+            "chunk_id": "chunk_00038",
             "intent": "eligibility",
             "category": "eligibility",
             "title": "Eligibility Criteria and Entrance Exams for MCA Program (2 Years)",
@@ -317,7 +425,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00029",
+            "chunk_id": "chunk_00039",
             "intent": "eligibility",
             "category": "eligibility",
             "title": "Eligibility Criteria and Entrance Exams for BCA and BBA (3 Years)",
@@ -327,7 +435,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00030",
+            "chunk_id": "chunk_00040",
             "intent": "eligibility",
             "category": "eligibility",
             "title": "Eligibility Criteria and Entrance Exams for M.Tech Programs (2 Years)",
@@ -337,7 +445,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00031",
+            "chunk_id": "chunk_00041",
             "intent": "scholarship",
             "category": "scholarship",
             "title": "Scholarship Scheme: WBJEE Tuition Fee Waiver (TFW)",
@@ -347,7 +455,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00032",
+            "chunk_id": "chunk_00042",
             "intent": "scholarship",
             "category": "scholarship",
             "title": "Scholarship Scheme: Swami Vivekananda Merit-cum-Means (SVMCM)",
@@ -357,7 +465,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00033",
+            "chunk_id": "chunk_00043",
             "intent": "scholarship",
             "category": "scholarship",
             "title": "Scholarship Scheme: Sikh Community Freeship",
@@ -367,7 +475,7 @@
             }
         },
         {
-            "chunk_id": "chunk_00034",
+            "chunk_id": "chunk_00044",
             "intent": "document",
             "category": "documents",
             "title": "Mandatory Documents Required for Admission and Physical Verification",

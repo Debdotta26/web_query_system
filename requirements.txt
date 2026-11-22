@@ -1,8 +1,8 @@
-streamlit
-requests
-beautifulsoup4
-pypdf
-sentence-transformers
-numpy
-pandas
-matplotlib
+# Requirements for NIT Admission QA Pipeline
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+pypdf>=3.17.0
+numpy>=1.24.0
+sentence-transformers>=2.2.0
+streamlit>=1.32.0

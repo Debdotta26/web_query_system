@@ -1,0 +1,306 @@
+{
+    "portal_url": "https://www.nit.ac.in/admission/index.php",
+    "college_name": "Narula Institute of Technology (NIT)",
+    "accreditation": "NAAC 'A' Accredited, NIRF Ranked 9 years straight, NBA Accredited, MAKAUT Affiliated",
+    "academic_session": "Admissions Open 2026-27",
+    "stream_seats": [
+        {
+            "stream": "Computer Science and Engineering (CSE)",
+            "seats": "300 seats",
+            "degree": "B.Tech (UG)"
+        },
+        {
+            "stream": "CSE (AI and Machine Learning)",
+            "seats": "240 seats",
+            "degree": "B.Tech (UG)"
+        },
+        {
+            "stream": "Information Technology (IT)",
+            "seats": "180 seats",
+            "degree": "B.Tech (UG)"
+        },
+        {
+            "stream": "Electronics and Communications Engineering (ECE)",
+            "seats": "150 seats",
+            "degree": "B.Tech (UG)"
+        },
+        {
+            "stream": "CSE (Data Science)",
+            "seats": "120 seats",
+            "degree": "B.Tech (UG)"
+        },
+        {
+            "stream": "Electrical Engineering (EE)",
+            "seats": "60 seats",
+            "degree": "B.Tech (UG)"
+        },
+        {
+            "stream": "Civil Engineering (CE)",
+            "seats": "60 seats",
+            "degree": "B.Tech (UG)"
+        },
+        {
+            "stream": "Mechanical Engineering (ME)",
+            "seats": "60 seats",
+            "degree": "B.Tech (UG)"
+        },
+        {
+            "stream": "Computer Science and Technology (CST)",
+            "seats": "60 seats",
+            "degree": "B.Tech (UG)"
+        },
+        {
+            "stream": "CSE (Business Systems - CSBS)",
+            "seats": "60 seats",
+            "degree": "B.Tech (UG)"
+        },
+        {
+            "stream": "Electronics and Computer Science (ECS)",
+            "seats": "30 seats",
+            "degree": "B.Tech (UG)"
+        },
+        {
+            "stream": "M.Tech Programs (CSE, ECE, EE, CE)",
+            "seats": "12 to 18 seats per branch",
+            "degree": "M.Tech (PG)"
+        },
+        {
+            "stream": "Master of Computer Applications (MCA)",
+            "seats": "60 seats",
+            "degree": "MCA (PG)"
+        },
+        {
+            "stream": "Bachelor of Computer Applications (BCA)",
+            "seats": "120 seats",
+            "degree": "BCA (UG)"
+        },
+        {
+            "stream": "Bachelor of Business Administration (BBA)",
+            "seats": "60 seats",
+            "degree": "BBA (UG)"
+        },
+        {
+            "stream": "Diploma in Civil, Electrical, Mechanical, ETCE",
+            "seats": "30 to 60 seats per branch",
+            "degree": "Diploma"
+        }
+    ],
+    "fee_tables": [
+        {
+            "table_title": "B.Tech Regular Programs - Semester Wise Fee Structure",
+            "headers": [
+                "Program",
+                "1st Sem",
+                "2nd Sem",
+                "3rd Sem",
+                "4th Sem",
+                "5th Sem",
+                "6th Sem",
+                "7th Sem",
+                "8th Sem",
+                "Total (4 Yrs)"
+            ],
+            "rows": [
+                [
+                    "CSE, CSE-AIML",
+                    "₹108,125",
+                    "₹77,825",
+                    "₹97,825",
+                    "₹97,825",
+                    "₹97,825",
+                    "₹97,825",
+                    "₹98,325",
+                    "₹99,325",
+                    "₹7,74,900"
+                ],
+                [
+                    "CSE (Data Science)",
+                    "₹99,625",
+                    "₹69,325",
+                    "₹89,325",
+                    "₹89,325",
+                    "₹89,325",
+                    "₹89,325",
+                    "₹89,825",
+                    "₹90,825",
+                    "₹7,06,900"
+                ],
+                [
+                    "IT, CST, CSBS",
+                    "₹96,375",
+                    "₹66,075",
+                    "₹86,075",
+                    "₹86,075",
+                    "₹86,075",
+                    "₹86,075",
+                    "₹86,575",
+                    "₹87,575",
+                    "₹6,80,900"
+                ],
+                [
+                    "ECE",
+                    "₹92,625",
+                    "₹62,325",
+                    "₹82,325",
+                    "₹82,325",
+                    "₹82,325",
+                    "₹82,325",
+                    "₹82,825",
+                    "₹83,825",
+                    "₹6,50,900"
+                ],
+                [
+                    "EE, CE, ME",
+                    "₹71,125",
+                    "₹40,825",
+                    "₹60,825",
+                    "₹60,825",
+                    "₹60,825",
+                    "₹60,825",
+                    "₹61,325",
+                    "₹62,325",
+                    "₹4,79,000"
+                ],
+                [
+                    "Electronics & Computer Science",
+                    "₹76,125",
+                    "₹45,825",
+                    "₹65,825",
+                    "₹65,825",
+                    "₹65,825",
+                    "₹65,825",
+                    "₹66,325",
+                    "₹67,325",
+                    "₹5,19,000"
+                ]
+            ]
+        },
+        {
+            "table_title": "Additional Mandatory & Facility Charges",
+            "headers": [
+                "Item",
+                "Cost",
+                "Details"
+            ],
+            "rows": [
+                [
+                    "Uniform Fees (One-Time)",
+                    "₹6,000",
+                    "For B.Tech, BCA, BBA, Diploma students (₹2,500 for MCA & M.Tech)."
+                ],
+                [
+                    "Hostel Fees (Admission)",
+                    "₹44,000",
+                    "₹6,500/month × 6 months = ₹39,000 plus one-time admission fee of ₹5,000. Separate hostels for boys and girls."
+                ],
+                [
+                    "Payment Mode",
+                    "Online Only",
+                    "All tuition, semester, and hostel fees must be paid through secure online portal."
+                ]
+            ]
+        }
+    ],
+    "eligibility_rules": [
+        {
+            "program": "B.Tech (Regular 4-Year)",
+            "qualifications": "Passed 10+2 Examination from a recognized Board with Physics and Mathematics along with Chemistry / Biotechnology / Biology / Computer Science / Technical Vocational subject.",
+            "minimum_percentage": "Minimum 45% marks in above subjects taken together (40% for reserved category: SC/ST/OBC/PwD).",
+            "entrance_exams": "Valid rank in WBJEE / JEE (Main) / CEE-AMPAI."
+        },
+        {
+            "program": "B.Tech Lateral Entry (2nd Year)",
+            "qualifications": "Passed Diploma in Engineering/Technology with minimum 45% (40% for SC/ST) or B.Sc with Mathematics in 10+2.",
+            "entrance_exams": "Valid rank in WB-JELET."
+        },
+        {
+            "program": "M.Tech Programs",
+            "qualifications": "B.Tech/B.E in relevant discipline with minimum 60% or 6.5 CGPA.",
+            "entrance_exams": "GATE or PGET conducted by MAKAUT."
+        },
+        {
+            "program": "MCA (2-Year)",
+            "qualifications": "Passed BCA/B.Sc/B.Com/B.A with Mathematics at 10+2 or Graduation level with at least 50% marks (45% for reserved category).",
+            "entrance_exams": "Valid rank in WB-JECA."
+        },
+        {
+            "program": "BCA & BBA (3-Year)",
+            "qualifications": "Passed 10+2 from recognized council with English and Mathematics / Business Math / Statistics / Computer Application.",
+            "entrance_exams": "Merit-based direct / CET."
+        },
+        {
+            "program": "Diploma in Engineering (3-Year)",
+            "qualifications": "Passed 10th standard (Madhyamik or equivalent) with minimum 35% marks and physical science + math.",
+            "entrance_exams": "Valid rank in JEXPO / Direct."
+        }
+    ],
+    "scholarships": [
+        {
+            "name": "WBJEE Tuition Fee Waiver (TFW)",
+            "details": "100% tuition fee waiver allotted via Centralized WBJEE counseling for meritorious students with family income under ₹2.5 Lakhs per annum."
+        },
+        {
+            "name": "Swami Vivekananda Merit-cum-Means (SVMCM)",
+            "details": "State govt scholarship offering ₹60,000 per year for B.Tech students scoring 60%+ in 10+2 with family income below ₹2.5 Lakhs."
+        },
+        {
+            "name": "Sikh Community Freeship",
+            "details": "Students belonging to the Sikh Community may apply for up to 50% freeship on tuition fees with community verification."
+        },
+        {
+            "name": "JIS Group Institutional Scholarship",
+            "details": "20% tuition fee waiver for students who completed earlier degree/diploma from any JIS Group institution."
+        },
+        {
+            "name": "North East Region Student Scholarship",
+            "details": "Special scholarship of ₹40,000 for students from the North East states enrolling in B.Tech programs."
+        },
+        {
+            "name": "Government Portals Supported",
+            "details": "National Scholarship Portal (NSP), Kanyashree (K3), Aikyashree, OASIS, Pragati & Saksham (AICTE), and Vidyalakshmi loan support."
+        }
+    ],
+    "admission_documents": [
+        "WBJEE / JEE Main / JELET / JECA Rank Card",
+        "Provisional Seat Allotment Letter from Centralized Counseling",
+        "10th Standard Admit Card / Birth Certificate (Proof of Age)",
+        "10th & 12th Standard Mark sheets and Passing Certificates",
+        "Domicile Certificate (for West Bengal quota / WBFS / TFW)",
+        "Category / Caste Certificate (SC/ST/OBC-A/OBC-B/PwD if applicable)",
+        "Family Income Certificate (issued by SDO/BDO for SVMCM / TFW)",
+        "Medical Fitness Certificate & Eye Test Certificate",
+        "Recent Passport Size Color Photographs (5 copies)",
+        "Aadhaar Card copy of candidate and parent",
+        "Anti-Ragging Undertakings (signed by Student & Parent online on antiragging.in)"
+    ],
+    "faqs": [
+        {
+            "question": "What is the fee for B.Tech Computer Science (CSE) in 1st semester?",
+            "answer": "For B.Tech Computer Science and Engineering (CSE) and CSE-AIML, the 1st semester fee is ₹108,125. The total 4-year fee across 8 semesters is ₹7,74,900."
+        },
+        {
+            "question": "What is the fee for B.Tech Information Technology (IT) or CSBS in 1st semester?",
+            "answer": "For B.Tech IT, CST, and CSBS, the 1st semester fee is ₹96,375. The total 4-year fee across 8 semesters is ₹6,80,900."
+        },
+        {
+            "question": "What is the fee for B.Tech Electronics and Communication (ECE) in 1st semester?",
+            "answer": "For B.Tech ECE, the 1st semester fee is ₹92,625. The total 4-year fee across 8 semesters is ₹6,50,900."
+        },
+        {
+            "question": "What is the hostel fee at Narula Institute of Technology?",
+            "answer": "Hostel charges are ₹6,500 per month (6 months = ₹39,000) plus a one-time admission charge of ₹5,000, making the total payable at admission ₹44,000. Separate hostels are provided for boys and girls."
+        },
+        {
+            "question": "What is the uniform fee?",
+            "answer": "One-time uniform fee is ₹6,000 for B.Tech, BCA, BBA, and Diploma students, and ₹2,500 for MCA & M.Tech students."
+        },
+        {
+            "question": "What are the required documents during admission reporting?",
+            "answer": "Required documents: WBJEE/JEE Rank Card, Allotment Letter, 10th Admit Card, 10th & 12th Marksheets, Domicile Certificate, Caste Certificate (if applicable), Income Certificate, Medical Fitness Certificate, 5 Photos, Aadhaar, and Anti-Ragging Undertakings."
+        },
+        {
+            "question": "Can I pay the fees in installments or avail EMI?",
+            "answer": "Yes, semester-wise payment flexibility, education loan assistance, and EMI options through partner banks are available."
+        }
+    ]
+}
